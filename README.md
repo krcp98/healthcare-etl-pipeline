@@ -19,7 +19,8 @@ This project implements a production-ready ETL pipeline for healthcare data proc
 ## 📊 Pipeline Architecture
 
 
-```tRaw Data (CSV) → Data Quality → Transformation → Business Metrics → Analytics (Parquet)
+```
+Raw Data (CSV) → Data Quality → Transformation → Business Metrics → Analytics (Parquet)
      ↓              ↓              ↓               ↓                    ↓
 ┌─────────────┐ ┌──────────────┐ ┌─────────────┐ ┌──────────────┐ ┌─────────────┐
 │   S3 Raw    │ │  Validation  │ │    Joins    │ │     KPIs     │ │S3 Processed │
